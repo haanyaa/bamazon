@@ -23,7 +23,7 @@ var table = new Table ( {
     style:{
         head:['blue'],
         compact:false,
-        colAligns:['center']
+        colAlign:['center']
     }
                          
 }
@@ -69,7 +69,7 @@ console.log("Your total for " + "(" + answer.Quantity + ")" + " - " + res[chosen
 connection.query("UPDATE products SET ? WHERE ?",[{
     sotock_quantity:res[chosenId].sotock_quantity - chosenQuantity
 },{
-    id:res[chosenId].id
+    item_id:res[chosenId].item_id
 }],function(err,res){if(err){console.log(err)}else{checkandBuy()}})
 }
 
@@ -81,4 +81,4 @@ connection.query("UPDATE products SET ? WHERE ?",[{
     
 
 }
-checkandBuy()
+checkandBuy();
