@@ -1,0 +1,19 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "bamazon",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haanyaa"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "prompt": "^1.0.0"
+  }
+}
